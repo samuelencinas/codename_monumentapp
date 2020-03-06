@@ -18,6 +18,7 @@ class HelperUsuarios {
   final FirebaseAuth _auth = FirebaseAuth.instance;
   final GoogleSignIn googleSignIn = GoogleSignIn();
 
+  //Constante lógica de puntos:
   Usuario usuario ;
   FirebaseUser user;
   bool nuevo;
@@ -245,4 +246,10 @@ class HelperUsuarios {
 
 //Método (11): Enviar seta
 
+  sumarPuntos(int base){
+
+  }
+
+
 }
+
