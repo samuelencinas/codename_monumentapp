@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "389081164297",
+    "firebase_url": "https://monumentapp-2fc17.firebaseio.com",
+    "project_id": "monumentapp-2fc17",
+    "storage_bucket": "monumentapp-2fc17.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:389081164297:android:b8026adee0412e973f66d8",
+        "android_client_info": {
+          "package_name": "com.uva.codename_monumentapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "389081164297-1nnnm1492qitmvp8ia6ilj7ll9qmpli7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.uva.codename_monumentapp",
+            "certificate_hash": "647c1760e119c2a56b55c98934e7d7ad960326cf"
+          }
+        },
+        {
+          "client_id": "389081164297-sjn3ac59en2oon7kastd8pc10q2shkoj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_HTG-etaxodI_WLRaSIdLy5CWxnvkVjY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "389081164297-sjn3ac59en2oon7kastd8pc10q2shkoj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
