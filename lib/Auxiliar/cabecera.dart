@@ -60,18 +60,18 @@ Drawer getMenu(FirebaseUser u, BuildContext context) {
       children: <Widget>[
         generarHeader(),
         ListTile(
-          title: Text('Mis lugares guardados'),
-          leading: Icon(Icons.home),
+          title: Text('Mi perfil'),
+          leading: Icon(Icons.person),
           //onTap: () => navegar(4, context, m),
         ),
         Divider(),
         ListTile(
-          title: Text('Mis solicitudes de amistad'),
-          leading: Icon(Icons.share),
+          title: Text('Quiénes somos'),
+          leading: Icon(Icons.people),
         ), //ListTile
         ListTile(
-          title: Text('Buscar usuarios'),
-          leading: Icon(Icons.search),
+          title: Text('Ajustes'),
+          leading: Icon(Icons.settings),
           //onTap: () => navegar(3, context, m),
         ),
         Divider(),
@@ -138,9 +138,8 @@ FutureBuilder getEmail() {
       future: dameEmail(),
       builder: (BuildContext context, AsyncSnapshot snapshot) {
         if (snapshot.hasData) {
-          return Text("Cuenta de Google asociada:\n" + snapshot.data);// your widget
-          //return Text(snapshot.data);
-        } else return Text("Usuario registrado con Twitter");
+          return Text(snapshot.data);
+        }
       }
   );
 }

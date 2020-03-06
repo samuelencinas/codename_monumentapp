@@ -28,10 +28,11 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    new _comprobarUsuario(usuarioFirebase);
+    //new _comprobarUsuario(usuarioFirebase);
     return new SplashScreen(
         seconds: 4,
-        navigateAfterSeconds: new _comprobarUsuario(usuarioFirebase),
+        //navigateAfterSeconds: new _comprobarUsuario(usuarioFirebase),
+        navigateAfterSeconds: new MyHomePage(),
         title: new Text('Espera mientras cargamos todo...',
           style: new TextStyle(
               fontWeight: FontWeight.bold,
