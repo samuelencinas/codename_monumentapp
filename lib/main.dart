@@ -1,3 +1,4 @@
+import 'package:codename_monumentapp/Pantallas/home.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -6,50 +7,25 @@ import 'package:splashscreen/splashscreen.dart';
 
 import 'Auxiliar/Colores.dart';
 import 'Pantallas/iniciarsesion.dart';
-import 'Pantallas/inicio.dart';
 
-void main() {
-  runApp(new MaterialApp(
-    theme: ThemeData(
-      //primaryColor: getPrimario(),
-    ),
-    home: new MyApp(),
-  ));
-}
+void main() => runApp(new MyApp());
 
-class MyApp extends StatefulWidget {
-
-  @override
-  _MyAppState createState() => new _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
-  FirebaseUser usuarioFirebase;
-
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    //new _comprobarUsuario(usuarioFirebase);
-    return new SplashScreen(
-        seconds: 4,
-        //navigateAfterSeconds: new _comprobarUsuario(usuarioFirebase),
-        navigateAfterSeconds: new MyHomePage(),
-        title: new Text('Espera mientras cargamos todo...',
-          style: new TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 20.0
-          ),),
-        image: new Image.asset("assets/logo.png"),
-        //backgroundColor: getSecundario(),
-        styleTextUnderTheLoader: new TextStyle(),
-        photoSize: 100.0,
-        loaderColor: getPrimario()
+    return new MaterialApp(
+      title: 'Zoom Menu',
+      theme: ThemeData(
+        primaryColor: Colors.red,
+        accentColor: Colors.green,
+      ),
+      home: new MyMaterialPage(),
     );
-
   }
 
-
-
 }
+
+
 
 class _comprobarUsuario extends StatelessWidget {
   FirebaseUser user;
@@ -71,7 +47,7 @@ class _comprobarUsuario extends StatelessWidget {
         builder: (BuildContext context, AsyncSnapshot<FirebaseUser> snapshot) {
           if (snapshot.hasData) {
             user = snapshot.data; // this is your user instance
-            return MyHomePage();
+            return MyMaterialPage();
           } //if
           return LoginPage(user);
         } //builder

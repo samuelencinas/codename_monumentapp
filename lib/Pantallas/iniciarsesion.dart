@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '../main.dart';
-import 'inicio.dart';
+import 'home.dart';
 
 class LoginPage extends StatefulWidget {
   final FirebaseUser u;
@@ -87,7 +87,7 @@ class _LoginPageState extends State<LoginPage> {
                 Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (context) {
-                      return MyHomePage();
+                      return MyMaterialPage();
                     },
                   ),
                 );
@@ -152,7 +152,7 @@ class _LoginPageState extends State<LoginPage> {
                 Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (context) {
-                      return MyHomePage();
+                      return MyMaterialPage();
                     },
                   ),
                 );

@@ -8,6 +8,21 @@ const cAlarma = Color(0xFFea4130);
 const cGris = Color(0xFF36353f);
 const cNegro = Color(0xFF181818);
 
+Color devolverPrimario(){
+  return cPrimario;
+}
+Color devolverSecundario(){
+  return cSecundario;
+}
+Color devolverAlarma(){
+  return cAlarma;
+}
+Color devolverOnix(){
+  return cGris;
+}
+Color devolverNegro(){
+  return cNegro;
+}
 Map<int, Color> colorPrimario =
 {
   50: Color.fromRGBO(245, 127, 91, .1),

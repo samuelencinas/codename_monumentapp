@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../main.dart';
-import 'inicio.dart';
+import 'home.dart';
 
 class PantallaRegistro extends StatelessWidget {
   @override
@@ -54,7 +54,7 @@ class PantallaRegistro extends StatelessWidget {
                     Navigator.of(context).push(
                       MaterialPageRoute(
                         builder: (context){
-                          return MyHomePage();
+                          return MyMaterialPage();
                         },
                       ),
                     );
